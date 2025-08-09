@@ -1,0 +1,54 @@
+20:47:55.597 [main] INFO  testCases.TC_InvalidLogin_002 - 🚀 Chrome browser launched
+20:48:02.888 [main] INFO  testCases.TC_InvalidLogin_002 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
+20:48:02.891 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
+20:48:02.892 [main] INFO  testCases.TC_InvalidLogin_002 - === TC_Login_001 Started ===
+20:48:04.250 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+20:48:04.998 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
+20:48:05.094 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
+20:48:05.094 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Passed ===
+20:48:05.365 [main] INFO  testCases.TC_InvalidLogin_002 - 🔴 Browser closed
+20:48:05.367 [main] INFO  testCases.TC_LiveList_003 - 🟢 Logger initialized for TC_LiveList_003
+20:48:06.525 [main] INFO  testCases.TC_LiveList_003 - 🚀 Chrome browser launched
+20:48:09.689 [main] INFO  testCases.TC_LiveList_003 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
+20:48:09.698 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
+20:48:10.318 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+20:48:11.225 [main] INFO  testCases.TC_LiveList_003 - 🔴 Browser closed
+20:52:56.139 [main] INFO  testCases.TC_LiveList_003 - 🟢 Logger initialized for TC_LiveList_003
+20:52:58.889 [main] INFO  testCases.TC_LiveList_003 - 🚀 Chrome browser launched
+20:53:02.494 [main] INFO  testCases.TC_LiveList_003 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
+20:53:02.556 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
+20:53:03.242 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+20:53:04.148 [main] INFO  testCases.TC_LiveList_003 - 🔴 Browser closed
+20:54:16.416 [main] INFO  testCases.TC_LiveList_003 - 🟢 Logger initialized for TC_LiveList_003
+20:54:18.349 [main] INFO  testCases.TC_LiveList_003 - 🚀 Chrome browser launched
+20:54:21.548 [main] INFO  testCases.TC_LiveList_003 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
+20:54:21.596 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
+20:54:22.236 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+20:54:23.006 [main] INFO  testCases.TC_LiveList_003 - Entered Username
+20:54:23.147 [main] INFO  testCases.TC_LiveList_003 - Entered Password
+20:54:23.222 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
+20:54:28.446 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
+20:54:30.305 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
+20:54:30.663 [main] INFO  testCases.TC_LiveList_003 - Entered date range
+20:54:32.742 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
+20:54:42.814 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
+20:54:42.814 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
+20:54:43.207 [main] INFO  testCases.TC_LiveList_003 - 🔴 Browser closed
+20:55:17.473 [main] INFO  testCases.TC_Login_001 - 🟢 Logger initialized for TC_Login_001
+20:55:20.123 [main] INFO  testCases.TC_Login_001 - 🚀 Chrome browser launched
+20:55:24.918 [main] INFO  testCases.TC_Login_001 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
+20:55:24.956 [main] INFO  testCases.TC_Login_001 - === TC_Login_001 Started ===
+20:55:25.949 [main] INFO  testCases.TC_Login_001 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+20:55:26.648 [main] INFO  testCases.TC_Login_001 - Entered Username
+20:55:26.780 [main] INFO  testCases.TC_Login_001 - Entered Password
+20:55:26.902 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
+20:55:28.201 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
+20:55:28.594 [main] INFO  testCases.TC_Login_001 - 🔴 Browser closed
+20:55:28.598 [main] INFO  testCases.TC_InvalidLogin_002 - 🟢 Logger initialized for TC_InvalidLogin_002
+20:55:29.657 [main] INFO  testCases.TC_InvalidLogin_002 - 🚀 Chrome browser launched
+20:55:33.024 [main] INFO  testCases.TC_InvalidLogin_002 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
+20:55:33.029 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
+20:55:33.029 [main] INFO  testCases.TC_InvalidLogin_002 - === TC_Login_001 Started ===
+20:55:33.684 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+20:55:34.355 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
+20:55:34.497 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
