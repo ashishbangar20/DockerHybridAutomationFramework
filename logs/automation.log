@@ -17,3 +17,14 @@
 12:04:20.288 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
 12:04:30.395 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
 12:04:30.395 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
+13:39:43.501 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
+13:39:44.638 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+13:39:45.479 [main] INFO  testCases.TC_LiveList_003 - Entered Username
+13:39:45.848 [main] INFO  testCases.TC_LiveList_003 - Entered Password
+13:39:46.122 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
+13:39:50.670 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
+13:39:52.889 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
+13:39:53.580 [main] INFO  testCases.TC_LiveList_003 - Entered date range
+13:39:55.730 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
+13:40:05.817 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
+13:40:05.829 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===

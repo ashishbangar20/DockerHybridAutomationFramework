@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 import java.util.List;
 
@@ -19,14 +20,12 @@ public class LeaveListPage {
         PageFactory.initElements(driver, this);
     }
 
-    // ✅ WebElements using @FindBy
-
+    // WebElements
     @FindBy(xpath = "//span[text()='Leave']")
     WebElement leaveMenu;
 
     @FindBy(xpath = "//a[contains(text(),'Leave List')]")
     WebElement leaveListOption;
-
 
     @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     WebElement employeeNameInput;
@@ -45,18 +44,21 @@ public class LeaveListPage {
 
     By resultTableRows = By.xpath("//div[@class='oxd-table-body']/div");
 
-    // ✅ Actions
- // temp comment to test git commit
-
-
+    // Navigate to Leave List safely
     public void navigateToLeaveList() {
-        leaveMenu.click();
-        //hiii addd
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement leaveListOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Leave List')]")));
-        leaveListOption.click();
-    }
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        Actions actions = new Actions(driver);
 
+        // Wait for Leave menu clickable and click
+        wait.until(ExpectedConditions.elementToBeClickable(leaveMenu));
+        actions.moveToElement(leaveMenu).click().perform();
+
+        // Wait for Leave List option to be visible and clickable
+        WebElement leaveListClickable = wait.until(
+            ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Leave List')]"))
+        );
+        actions.moveToElement(leaveListClickable).click().perform();
+    }
 
     public void enterEmployeeName(String name) {
         employeeNameInput.clear();
@@ -116,7 +118,6 @@ public class LeaveListPage {
     public void waitFor(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
-        } catch (InterruptedException ignored) {
-        }
+        } catch (InterruptedException ignored) {}
     }
 }
