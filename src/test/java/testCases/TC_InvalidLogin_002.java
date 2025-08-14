@@ -15,7 +15,7 @@ public class TC_InvalidLogin_002 extends BaseClass {
 
     Logger logger = LogManager.getLogger(this.getClass());
 
-    @Test(priority = 1, groups = {"sanity"})
+    @Test( groups = {"sanity"})
     public void test_blank_login() {
         logger.info("=== Test_006_Login_Blank_Credentials Started ===");
 

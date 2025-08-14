@@ -16,7 +16,7 @@ public class TC_LiveList_003 extends BaseClass {
 
     Logger logger = LogManager.getLogger(this.getClass());
 
-    @Test(priority = 1, groups = {"sanity"})
+    @Test(groups = {"sanity"})
     public void test_leave_list_search() throws InterruptedException {
         logger.info("=== TC_LeaveListSearch_003 Started ===");
         
