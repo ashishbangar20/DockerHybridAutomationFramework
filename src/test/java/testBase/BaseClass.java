@@ -63,6 +63,9 @@ public class BaseClass {
                     options.addArguments("--window-size=1920,1080");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage"); // for container / Jenkins stability
+                    options.addArguments("--remote-allow-origins=*"); // avoids some CDP warnings
+
                 }
                 
                 driver = new ChromeDriver(options);

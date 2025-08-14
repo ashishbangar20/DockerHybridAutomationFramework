@@ -28,3 +28,8 @@
 13:39:55.730 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
 13:40:05.817 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
 13:40:05.829 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
+13:50:42.311 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
+13:50:43.323 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+13:50:43.986 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
+13:50:44.163 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
+13:50:44.172 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
