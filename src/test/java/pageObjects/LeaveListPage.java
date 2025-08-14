@@ -51,7 +51,7 @@ public class LeaveListPage {
 
     public void navigateToLeaveList() {
         leaveMenu.click();
-        
+        //hiii
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement leaveListOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Leave List')]")));
         leaveListOption.click();
