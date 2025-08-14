@@ -11,10 +11,12 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -53,7 +55,17 @@ public class BaseClass {
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                
+                // Headless for Jenkins
+                if (System.getProperty("os.name").toLowerCase().contains("windows") && System.getenv("JENKINS_HOME") != null) {
+                    options.addArguments("--headless=new");
+                    options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--no-sandbox");
+                }
+                
+                driver = new ChromeDriver(options);
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
@@ -76,6 +88,7 @@ public class BaseClass {
         driver.get(prop.getProperty("AppURL"));
     }
 
+    // Screenshot utility
     public String captureScreen(String testName) {
         String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
