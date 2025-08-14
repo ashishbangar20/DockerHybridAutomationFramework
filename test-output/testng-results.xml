@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-08T20:56:16 IST" name="Suite" finished-at="2025-08-08T20:57:02 IST" duration-ms="45464">
+  <suite started-at="2025-08-14T08:01:56 IST" name="Suite" finished-at="2025-08-14T08:02:50 IST" duration-ms="54240">
     <groups>
       <group name="sanity">
-        <method signature="TC_InvalidLogin_002.test_blank_login()[pri:1, instance:testCases.TC_InvalidLogin_002@47428937]" name="test_blank_login" class="testCases.TC_InvalidLogin_002"/>
-        <method signature="TC_LiveList_003.test_leave_list_search()[pri:1, instance:testCases.TC_LiveList_003@3b9d6699]" name="test_leave_list_search" class="testCases.TC_LiveList_003"/>
+        <method signature="TC_InvalidLogin_002.test_blank_login()[pri:1, instance:testCases.TC_InvalidLogin_002@62417a16]" name="test_blank_login" class="testCases.TC_InvalidLogin_002"/>
+        <method signature="TC_LiveList_003.test_leave_list_search()[pri:1, instance:testCases.TC_LiveList_003@32057e6]" name="test_leave_list_search" class="testCases.TC_LiveList_003"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-08-08T20:56:16 IST" name="Test" finished-at="2025-08-08T20:57:02 IST" duration-ms="45464">
+    <test started-at="2025-08-14T08:01:56 IST" name="Test" finished-at="2025-08-14T08:02:50 IST" duration-ms="54240">
       <class name="testCases.TC_Login_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_Login_001@496bc455]" started-at="2025-08-08T20:56:16 IST" name="setup" finished-at="2025-08-08T20:56:22 IST" duration-ms="5177" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-14T08:01:56 IST" name="reportSetup" finished-at="2025-08-14T08:01:56 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-14T08:01:56 IST" name="setup" finished-at="2025-08-14T08:02:05 IST" duration-ms="9380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,17 +26,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin()[pri:0, instance:testCases.TC_Login_001@496bc455]" started-at="2025-08-08T20:56:22 IST" name="testLogin" finished-at="2025-08-08T20:56:24 IST" duration-ms="2672" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-14T08:02:05 IST" name="testLogin" finished-at="2025-08-14T08:02:09 IST" duration-ms="3948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Login_001@496bc455]" started-at="2025-08-08T20:56:24 IST" name="tearDown" finished-at="2025-08-08T20:56:25 IST" duration-ms="398" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-14T08:02:09 IST" name="tearDown" finished-at="2025-08-14T08:02:10 IST" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-14T08:02:50 IST" name="reportTearDown" finished-at="2025-08-14T08:02:51 IST" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTearDown -->
       </class> <!-- testCases.TC_Login_001 -->
       <class name="testCases.TC_InvalidLogin_002">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_InvalidLogin_002@47428937]" started-at="2025-08-08T20:56:25 IST" name="setup" finished-at="2025-08-08T20:56:33 IST" duration-ms="8149" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_InvalidLogin_002@62417a16]" started-at="2025-08-14T08:02:10 IST" name="setup" finished-at="2025-08-14T08:02:15 IST" duration-ms="5370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,17 +51,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_blank_login()[pri:1, instance:testCases.TC_InvalidLogin_002@47428937]" started-at="2025-08-08T20:56:33 IST" name="test_blank_login" finished-at="2025-08-08T20:56:35 IST" duration-ms="2151" status="PASS">
+        <test-method signature="test_blank_login()[pri:1, instance:testCases.TC_InvalidLogin_002@62417a16]" started-at="2025-08-14T08:02:15 IST" name="test_blank_login" finished-at="2025-08-14T08:02:18 IST" duration-ms="2818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_blank_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_InvalidLogin_002@47428937]" started-at="2025-08-08T20:56:35 IST" name="tearDown" finished-at="2025-08-08T20:56:35 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_InvalidLogin_002@62417a16]" started-at="2025-08-14T08:02:18 IST" name="tearDown" finished-at="2025-08-14T08:02:18 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_InvalidLogin_002 -->
       <class name="testCases.TC_LiveList_003">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_LiveList_003@3b9d6699]" started-at="2025-08-08T20:56:35 IST" name="setup" finished-at="2025-08-08T20:56:41 IST" duration-ms="5365" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_LiveList_003@32057e6]" started-at="2025-08-14T08:02:18 IST" name="setup" finished-at="2025-08-14T08:02:25 IST" duration-ms="6978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,11 +72,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_leave_list_search()[pri:1, instance:testCases.TC_LiveList_003@3b9d6699]" started-at="2025-08-08T20:56:41 IST" name="test_leave_list_search" finished-at="2025-08-08T20:57:02 IST" duration-ms="20869" status="PASS">
+        <test-method signature="test_leave_list_search()[pri:1, instance:testCases.TC_LiveList_003@32057e6]" started-at="2025-08-14T08:02:25 IST" name="test_leave_list_search" finished-at="2025-08-14T08:02:50 IST" duration-ms="24723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_leave_list_search -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LiveList_003@3b9d6699]" started-at="2025-08-08T20:57:02 IST" name="tearDown" finished-at="2025-08-08T20:57:02 IST" duration-ms="353" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LiveList_003@32057e6]" started-at="2025-08-14T08:02:50 IST" name="tearDown" finished-at="2025-08-14T08:02:50 IST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
