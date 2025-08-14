@@ -1,53 +1,19 @@
-07:38:10.853 [main] INFO  testCases.TC_Login_001 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-07:38:11.443 [main] INFO  testCases.TC_Login_001 - Entered Username
-07:38:11.594 [main] INFO  testCases.TC_Login_001 - Entered Password
-07:38:12.970 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
-07:38:12.977 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
-07:38:13.315 [main] INFO  testCases.TC_Login_001 - 🔴 Browser closed
-07:38:13.323 [main] INFO  testCases.TC_InvalidLogin_002 - 🟢 Logger initialized for TC_InvalidLogin_002
-07:38:14.571 [main] INFO  testCases.TC_InvalidLogin_002 - 🚀 Chrome browser launched
-07:38:18.387 [main] INFO  testCases.TC_InvalidLogin_002 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
-07:38:18.391 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
-07:38:18.391 [main] INFO  testCases.TC_InvalidLogin_002 - === TC_Login_001 Started ===
-07:38:19.302 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-07:38:20.191 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
-07:38:20.284 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
-07:38:20.284 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Passed ===
-07:38:20.585 [main] INFO  testCases.TC_InvalidLogin_002 - 🔴 Browser closed
-07:38:20.591 [main] INFO  testCases.TC_LiveList_003 - 🟢 Logger initialized for TC_LiveList_003
-07:38:21.580 [main] INFO  testCases.TC_LiveList_003 - 🚀 Chrome browser launched
-07:38:26.147 [main] INFO  testCases.TC_LiveList_003 - 🌐 Navigated to: https://opensource-demo.orangehrmlive.com/
-07:38:26.158 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
-07:38:27.747 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-07:38:28.465 [main] INFO  testCases.TC_LiveList_003 - Entered Username
-07:38:28.566 [main] INFO  testCases.TC_LiveList_003 - Entered Password
-07:38:28.627 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
-07:38:35.018 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
-07:38:38.239 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
-07:38:38.460 [main] INFO  testCases.TC_LiveList_003 - Entered date range
-07:38:40.529 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
-07:38:50.558 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
-07:38:50.558 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
-07:38:50.858 [main] INFO  testCases.TC_LiveList_003 - 🔴 Browser closed
-08:02:05.812 [main] INFO  testCases.TC_Login_001 - === TC_Login_001 Started ===
-08:02:07.965 [main] INFO  testCases.TC_Login_001 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-08:02:09.490 [main] INFO  testCases.TC_Login_001 - Entered Username
-08:02:09.617 [main] INFO  testCases.TC_Login_001 - Entered Password
-08:02:09.703 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
-08:02:09.710 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
-08:02:15.448 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
-08:02:16.777 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-08:02:18.151 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
-08:02:18.246 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
-08:02:18.253 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
-08:02:25.497 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
-08:02:26.516 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-08:02:27.637 [main] INFO  testCases.TC_LiveList_003 - Entered Username
-08:02:27.789 [main] INFO  testCases.TC_LiveList_003 - Entered Password
-08:02:29.784 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
-08:02:35.540 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
-08:02:37.695 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
-08:02:37.969 [main] INFO  testCases.TC_LiveList_003 - Entered date range
-08:02:40.081 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
-08:02:50.213 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
-08:02:50.213 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
+12:03:51.414 [main] INFO  testCases.TC_Login_001 - Entered Password
+12:03:51.631 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
+12:03:53.079 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
+12:03:59.408 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
+12:04:00.437 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+12:04:01.241 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
+12:04:01.320 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
+12:04:01.320 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
+12:04:07.725 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
+12:04:08.609 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+12:04:10.300 [main] INFO  testCases.TC_LiveList_003 - Entered Username
+12:04:10.536 [main] INFO  testCases.TC_LiveList_003 - Entered Password
+12:04:10.709 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
+12:04:15.770 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
+12:04:17.508 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
+12:04:18.036 [main] INFO  testCases.TC_LiveList_003 - Entered date range
+12:04:20.288 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
+12:04:30.395 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
+12:04:30.395 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-14T12:03:40 IST" name="Suite" finished-at="2025-08-14T12:04:30 IST" duration-ms="50776">
+    <groups>
+      <group name="sanity">
+        <method signature="TC_InvalidLogin_002.test_blank_login()[pri:1, instance:testCases.TC_InvalidLogin_002@2cf23c81]" name="test_blank_login" class="testCases.TC_InvalidLogin_002"/>
+        <method signature="TC_LiveList_003.test_leave_list_search()[pri:1, instance:testCases.TC_LiveList_003@3624da92]" name="test_leave_list_search" class="testCases.TC_LiveList_003"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2025-08-14T12:03:40 IST" name="Test" finished-at="2025-08-14T12:04:30 IST" duration-ms="50776">
+      <class name="testCases.TC_Login_001">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:testCases.TC_Login_001@196a42c3]" started-at="2025-08-14T12:03:39 IST" name="reportSetup" finished-at="2025-08-14T12:03:40 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_Login_001@196a42c3]" started-at="2025-08-14T12:03:40 IST" name="setup" finished-at="2025-08-14T12:03:49 IST" duration-ms="8803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin()[pri:0, instance:testCases.TC_Login_001@196a42c3]" started-at="2025-08-14T12:03:49 IST" name="testLogin" finished-at="2025-08-14T12:03:53 IST" duration-ms="4023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Login_001@196a42c3]" started-at="2025-08-14T12:03:53 IST" name="tearDown" finished-at="2025-08-14T12:03:53 IST" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:testCases.TC_Login_001@196a42c3]" started-at="2025-08-14T12:04:31 IST" name="reportTearDown" finished-at="2025-08-14T12:04:32 IST" duration-ms="1065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTearDown -->
+      </class> <!-- testCases.TC_Login_001 -->
+      <class name="testCases.TC_InvalidLogin_002">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_InvalidLogin_002@2cf23c81]" started-at="2025-08-14T12:03:53 IST" name="setup" finished-at="2025-08-14T12:03:59 IST" duration-ms="5696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_blank_login()[pri:1, instance:testCases.TC_InvalidLogin_002@2cf23c81]" started-at="2025-08-14T12:03:59 IST" name="test_blank_login" finished-at="2025-08-14T12:04:01 IST" duration-ms="1921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_blank_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_InvalidLogin_002@2cf23c81]" started-at="2025-08-14T12:04:01 IST" name="tearDown" finished-at="2025-08-14T12:04:01 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_InvalidLogin_002 -->
+      <class name="testCases.TC_LiveList_003">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_LiveList_003@3624da92]" started-at="2025-08-14T12:04:01 IST" name="setup" finished-at="2025-08-14T12:04:07 IST" duration-ms="5922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_leave_list_search()[pri:1, instance:testCases.TC_LiveList_003@3624da92]" started-at="2025-08-14T12:04:07 IST" name="test_leave_list_search" finished-at="2025-08-14T12:04:30 IST" duration-ms="22678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_leave_list_search -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LiveList_003@3624da92]" started-at="2025-08-14T12:04:30 IST" name="tearDown" finished-at="2025-08-14T12:04:30 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_LiveList_003 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

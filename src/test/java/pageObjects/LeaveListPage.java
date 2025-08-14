@@ -24,8 +24,9 @@ public class LeaveListPage {
     @FindBy(xpath = "//span[text()='Leave']")
     WebElement leaveMenu;
 
-    @FindBy(xpath = "//a[text()='Leave List']")
+    @FindBy(xpath = "//a[contains(text(),'Leave List')]")
     WebElement leaveListOption;
+
 
     @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     WebElement employeeNameInput;
@@ -45,12 +46,17 @@ public class LeaveListPage {
     By resultTableRows = By.xpath("//div[@class='oxd-table-body']/div");
 
     // ✅ Actions
+ // temp comment to test git commit
+
 
     public void navigateToLeaveList() {
         leaveMenu.click();
-        waitFor(2);
+        
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement leaveListOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'Leave List')]")));
         leaveListOption.click();
     }
+
 
     public void enterEmployeeName(String name) {
         employeeNameInput.clear();
