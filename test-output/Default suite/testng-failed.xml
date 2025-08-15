@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_LiveList_003">
+      <class name="testCases.TC_Blank_login__003">
         <methods>
           <include name="tearDown"/>
-          <include name="test_leave_list_search"/>
+          <include name="reportSetup"/>
+          <include name="verifyInvalidLogin"/>
           <include name="setup"/>
+          <include name="reportTearDown"/>
         </methods>
-      </class> <!-- testCases.TC_LiveList_003 -->
+      </class> <!-- testCases.TC_Blank_login__003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

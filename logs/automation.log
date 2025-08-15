@@ -1,35 +1,27 @@
-12:03:51.414 [main] INFO  testCases.TC_Login_001 - Entered Password
-12:03:51.631 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
-12:03:53.079 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
-12:03:59.408 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
-12:04:00.437 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-12:04:01.241 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
-12:04:01.320 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
-12:04:01.320 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
-12:04:07.725 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
-12:04:08.609 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-12:04:10.300 [main] INFO  testCases.TC_LiveList_003 - Entered Username
-12:04:10.536 [main] INFO  testCases.TC_LiveList_003 - Entered Password
-12:04:10.709 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
-12:04:15.770 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
-12:04:17.508 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
-12:04:18.036 [main] INFO  testCases.TC_LiveList_003 - Entered date range
-12:04:20.288 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
-12:04:30.395 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
-12:04:30.395 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
-13:39:43.501 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Started ===
-13:39:44.638 [main] INFO  testCases.TC_LiveList_003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-13:39:45.479 [main] INFO  testCases.TC_LiveList_003 - Entered Username
-13:39:45.848 [main] INFO  testCases.TC_LiveList_003 - Entered Password
-13:39:46.122 [main] INFO  testCases.TC_LiveList_003 - Clicked Login button
-13:39:50.670 [main] INFO  testCases.TC_LiveList_003 - Navigated to Leave List Page
-13:39:52.889 [main] INFO  testCases.TC_LiveList_003 - Entered and selected employee: Ranga Akunuri
-13:39:53.580 [main] INFO  testCases.TC_LiveList_003 - Entered date range
-13:39:55.730 [main] INFO  testCases.TC_LiveList_003 - Clicked Search button
-13:40:05.817 [main] INFO  testCases.TC_LiveList_003 - No records found for selected filter
-13:40:05.829 [main] INFO  testCases.TC_LiveList_003 - === TC_LeaveListSearch_003 Completed ===
-13:50:42.311 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
-13:50:43.323 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
-13:50:43.986 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
-13:50:44.163 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
-13:50:44.172 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
+12:55:29.292 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Started ===
+12:55:30.135 [main] INFO  testCases.TC_Blank_login__003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+12:55:30.201 [main] INFO  testCases.TC_Blank_login__003 - Entering invalid username: wrong_user
+12:55:31.468 [main] INFO  testCases.TC_Blank_login__003 - Entering invalid password: wrong_pass
+12:55:31.881 [main] INFO  testCases.TC_Blank_login__003 - Clicking login button with invalid credentials
+12:55:33.663 [main] INFO  testCases.TC_Blank_login__003 - Validating error message: Expected='Invalid credentials' | Actual='Invalid credentials'
+12:55:33.672 [main] INFO  testCases.TC_Blank_login__003 - Invalid login validation passed
+12:55:33.674 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Finished ===
+12:56:35.271 [main] INFO  testCases.TC_Login_001 - === TC_Login_001 Started ===
+12:56:36.363 [main] INFO  testCases.TC_Login_001 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+12:56:37.882 [main] INFO  testCases.TC_Login_001 - Entered Username
+12:56:38.164 [main] INFO  testCases.TC_Login_001 - Entered Password
+12:56:38.359 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
+12:56:39.709 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
+12:56:48.631 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
+12:56:49.653 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+12:56:50.159 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
+12:56:50.300 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
+12:56:50.302 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
+12:56:55.945 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Started ===
+12:56:56.776 [main] INFO  testCases.TC_Blank_login__003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+12:56:56.776 [main] INFO  testCases.TC_Blank_login__003 - Entering invalid username: wrong_user
+12:56:57.617 [main] INFO  testCases.TC_Blank_login__003 - Entering invalid password: wrong_pass
+12:56:57.934 [main] INFO  testCases.TC_Blank_login__003 - Clicking login button with invalid credentials
+12:56:59.577 [main] INFO  testCases.TC_Blank_login__003 - Validating error message: Expected='Invalid credentials' | Actual='Invalid credentials'
+12:56:59.577 [main] INFO  testCases.TC_Blank_login__003 - Invalid login validation passed
+12:56:59.577 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Finished ===

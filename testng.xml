@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.TC_Login_001"/>
       <class name="testCases.TC_InvalidLogin_002"/>
-      <class name="testCases.TC_LiveList_003"/>
+      <class name="testCases.TC_Blank_login__003"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
