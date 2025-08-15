@@ -25,3 +25,22 @@
 12:56:59.577 [main] INFO  testCases.TC_Blank_login__003 - Validating error message: Expected='Invalid credentials' | Actual='Invalid credentials'
 12:56:59.577 [main] INFO  testCases.TC_Blank_login__003 - Invalid login validation passed
 12:56:59.577 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Finished ===
+18:12:43.579 [main] INFO  testCases.TC_Login_001 - === TC_Login_001 Started ===
+18:12:45.461 [main] INFO  testCases.TC_Login_001 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+18:12:46.049 [main] INFO  testCases.TC_Login_001 - Entered Username
+18:12:46.303 [main] INFO  testCases.TC_Login_001 - Entered Password
+18:12:46.472 [main] INFO  testCases.TC_Login_001 - Clicked Login Button
+18:12:47.715 [main] INFO  testCases.TC_Login_001 - Login Test Passed ✅
+18:12:55.024 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Started ===
+18:12:56.407 [main] INFO  testCases.TC_InvalidLogin_002 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+18:12:56.964 [main] INFO  testCases.TC_InvalidLogin_002 - Clicked Login button without entering credentials
+18:12:57.052 [main] INFO  testCases.TC_InvalidLogin_002 - Validation message displayed as expected.
+18:12:57.052 [main] INFO  testCases.TC_InvalidLogin_002 - === Test_006_Login_Blank_Credentials Completed ===
+18:13:03.853 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Started ===
+18:13:05.338 [main] INFO  testCases.TC_Blank_login__003 - Navigated to URL: https://opensource-demo.orangehrmlive.com/
+18:13:05.339 [main] INFO  testCases.TC_Blank_login__003 - Entering invalid username: wrong_user
+18:13:05.999 [main] INFO  testCases.TC_Blank_login__003 - Entering invalid password: wrong_pass
+18:13:06.212 [main] INFO  testCases.TC_Blank_login__003 - Clicking login button with invalid credentials
+18:13:07.513 [main] INFO  testCases.TC_Blank_login__003 - Validating error message: Expected='Invalid credentials' | Actual='Invalid credentials'
+18:13:07.513 [main] INFO  testCases.TC_Blank_login__003 - Invalid login validation passed
+18:13:07.513 [main] INFO  testCases.TC_Blank_login__003 - === TC_Invalid_Login_004 Finished ===

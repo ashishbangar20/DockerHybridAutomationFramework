@@ -2,80 +2,59 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-15T12:56:28 IST" name="Suite" finished-at="2025-08-15T12:57:00 IST" duration-ms="31328">
+  <suite started-at="2025-08-15T18:12:33 IST" name="Suite" finished-at="2025-08-15T18:13:07 IST" duration-ms="33866">
     <groups>
       <group name="sanity">
-        <method signature="TC_InvalidLogin_002.test_blank_login()[pri:0, instance:testCases.TC_InvalidLogin_002@62417a16]" name="test_blank_login" class="testCases.TC_InvalidLogin_002"/>
+        <method signature="TC_InvalidLogin_002.test_blank_login()[pri:0, instance:testCases.TC_InvalidLogin_002@21694e53]" name="test_blank_login" class="testCases.TC_InvalidLogin_002"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-08-15T12:56:28 IST" name="Test" finished-at="2025-08-15T12:57:00 IST" duration-ms="31328">
+    <test started-at="2025-08-15T18:12:33 IST" name="Test" finished-at="2025-08-15T18:13:07 IST" duration-ms="33866">
       <class name="testCases.TC_Login_001">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-15T12:56:28 IST" name="reportSetup" finished-at="2025-08-15T12:56:28 IST" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:testCases.TC_Login_001@1033576a]" started-at="2025-08-15T18:12:33 IST" name="reportSetup" finished-at="2025-08-15T18:12:33 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-15T12:56:28 IST" name="setup" finished-at="2025-08-15T12:56:35 IST" duration-ms="6470" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_Login_001@1033576a]" started-at="2025-08-15T18:12:33 IST" name="setup" finished-at="2025-08-15T18:12:43 IST" duration-ms="9554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-15T12:56:35 IST" name="testLogin" finished-at="2025-08-15T12:56:39 IST" duration-ms="4500" status="PASS">
+        <test-method signature="testLogin()[pri:0, instance:testCases.TC_Login_001@1033576a]" started-at="2025-08-15T18:12:43 IST" name="testLogin" finished-at="2025-08-15T18:12:47 IST" duration-ms="4172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-15T12:56:39 IST" name="tearDown" finished-at="2025-08-15T12:56:40 IST" duration-ms="465" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Login_001@1033576a]" started-at="2025-08-15T18:12:47 IST" name="tearDown" finished-at="2025-08-15T18:12:48 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:testCases.TC_Login_001@4a003cbe]" started-at="2025-08-15T12:57:00 IST" name="reportTearDown" finished-at="2025-08-15T12:57:00 IST" duration-ms="466" status="PASS">
+        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:testCases.TC_Login_001@1033576a]" started-at="2025-08-15T18:13:07 IST" name="reportTearDown" finished-at="2025-08-15T18:13:08 IST" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTearDown -->
       </class> <!-- testCases.TC_Login_001 -->
       <class name="testCases.TC_Blank_login__003">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_Blank_login__003@32057e6]" started-at="2025-08-15T12:56:50 IST" name="setup" finished-at="2025-08-15T12:56:55 IST" duration-ms="5292" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_Blank_login__003@72b16078]" started-at="2025-08-15T18:12:57 IST" name="setup" finished-at="2025-08-15T18:13:03 IST" duration-ms="6474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyInvalidLogin()[pri:0, instance:testCases.TC_Blank_login__003@32057e6]" started-at="2025-08-15T12:56:55 IST" name="verifyInvalidLogin" finished-at="2025-08-15T12:56:59 IST" duration-ms="3636" status="PASS">
+        <test-method signature="verifyInvalidLogin()[pri:0, instance:testCases.TC_Blank_login__003@72b16078]" started-at="2025-08-15T18:13:03 IST" name="verifyInvalidLogin" finished-at="2025-08-15T18:13:07 IST" duration-ms="3663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Blank_login__003@32057e6]" started-at="2025-08-15T12:56:59 IST" name="tearDown" finished-at="2025-08-15T12:57:00 IST" duration-ms="458" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_Blank_login__003@72b16078]" started-at="2025-08-15T18:13:07 IST" name="tearDown" finished-at="2025-08-15T18:13:07 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC_Blank_login__003 -->
       <class name="testCases.TC_InvalidLogin_002">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_InvalidLogin_002@62417a16]" started-at="2025-08-15T12:56:40 IST" name="setup" finished-at="2025-08-15T12:56:48 IST" duration-ms="8411" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_InvalidLogin_002@21694e53]" started-at="2025-08-15T18:12:48 IST" name="setup" finished-at="2025-08-15T18:12:55 IST" duration-ms="6974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_blank_login()[pri:0, instance:testCases.TC_InvalidLogin_002@62417a16]" started-at="2025-08-15T12:56:48 IST" name="test_blank_login" finished-at="2025-08-15T12:56:50 IST" duration-ms="1685" status="PASS">
+        <test-method signature="test_blank_login()[pri:0, instance:testCases.TC_InvalidLogin_002@21694e53]" started-at="2025-08-15T18:12:55 IST" name="test_blank_login" finished-at="2025-08-15T18:12:57 IST" duration-ms="2030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_blank_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_InvalidLogin_002@62417a16]" started-at="2025-08-15T12:56:50 IST" name="tearDown" finished-at="2025-08-15T12:56:50 IST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_InvalidLogin_002@21694e53]" started-at="2025-08-15T18:12:57 IST" name="tearDown" finished-at="2025-08-15T18:12:57 IST" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

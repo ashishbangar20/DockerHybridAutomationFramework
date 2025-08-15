@@ -1,36 +1,38 @@
 package testBase;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
+import java.util.UUID;
+import java.io.File;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExtentReportUtility;
 
 public class BaseClass {
 
+    // Thread-safe WebDriver for parallel execution
+    private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
     public WebDriver driver;
     public Properties prop;
     public Logger logger;
@@ -40,9 +42,8 @@ public class BaseClass {
         ExtentReportUtility.initReport();
     }
 
-    @Parameters("browser")
     @BeforeClass
-    public void setup(@Optional("chrome") String browser) throws IOException {
+    public void setup() throws IOException {
         // Load config.properties
         prop = new Properties();
         FileInputStream fis = new FileInputStream("./src/test/resources/config.properties");
@@ -51,44 +52,73 @@ public class BaseClass {
         // Logger setup
         logger = LogManager.getLogger(getClass());
 
-        // Setup browser
+        // Determine browser
+        String browser = System.getenv("BROWSER");
+        if (browser == null || browser.isEmpty()) {
+            browser = prop.getProperty("browser", "chrome");
+        }
+
+        WebDriver localDriver;
+
         switch (browser.toLowerCase()) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                ChromeOptions options = new ChromeOptions();
-                
-                // Headless for Jenkins
-                if (System.getProperty("os.name").toLowerCase().contains("windows") && System.getenv("JENKINS_HOME") != null) {
-                    options.addArguments("--headless=new");
-                    options.addArguments("--window-size=1920,1080");
-                    options.addArguments("--disable-gpu");
-                    options.addArguments("--no-sandbox");
-                    options.addArguments("--disable-dev-shm-usage"); // for container / Jenkins stability
-                    options.addArguments("--remote-allow-origins=*"); // avoids some CDP warnings
+                ChromeOptions chromeOptions = new ChromeOptions();
 
-                }
-                
-                driver = new ChromeDriver(options);
+                // Unique user data directory to avoid session conflicts
+                chromeOptions.addArguments("--user-data-dir=/tmp/chrome-profile-" + UUID.randomUUID());
+                chromeOptions.addArguments("--headless=new");
+                chromeOptions.addArguments("--window-size=1920,1080");
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--remote-allow-origins=*");
+                chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+                chromeOptions.setExperimentalOption("useAutomationExtension", false);
+
+                localDriver = new ChromeDriver(chromeOptions);
                 break;
-            case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                break;
+
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--headless=new");
+                edgeOptions.addArguments("--window-size=1920,1080");
+                edgeOptions.addArguments("--disable-gpu");
+                edgeOptions.addArguments("--no-sandbox");
+                edgeOptions.addArguments("--disable-dev-shm-usage");
+
+                localDriver = new EdgeDriver(edgeOptions);
                 break;
+
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions ffOptions = new FirefoxOptions();
+                ffOptions.addArguments("--headless");
+                ffOptions.addArguments("--width=1920");
+                ffOptions.addArguments("--height=1080");
+                ffOptions.addArguments("--no-sandbox");
+                ffOptions.addArguments("--disable-dev-shm-usage");
+
+                localDriver = new FirefoxDriver(ffOptions);
+                break;
+
             default:
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                throw new IllegalArgumentException("Browser not supported: " + browser);
         }
 
-        driver.manage().window().maximize();
+        // Thread-safe driver assignment
+        driverThread.set(localDriver);
+        driver = driverThread.get();
+
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-        // Open URL
         driver.get(prop.getProperty("AppURL"));
+    }
+
+    // Get the driver for parallel execution
+    public static WebDriver getDriver() {
+        return driverThread.get();
     }
 
     // Screenshot utility
@@ -104,10 +134,16 @@ public class BaseClass {
         return path;
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
+        if (driverThread.get() != null) {
+            try {
+                driverThread.get().quit();
+            } catch (Exception e) {
+                logger.error("Error quitting driver: ", e);
+            } finally {
+                driverThread.remove(); // Clean up ThreadLocal
+            }
         }
     }
 
