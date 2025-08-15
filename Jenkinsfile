@@ -1,14 +1,10 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven_3.9.6'   // Jenkins → Manage Jenkins → Tools me jo name diya wahi use karo
-        jdk 'JDK21'           // Jenkins me configured JDK ka name
-    }
-
     environment {
-        REPORT_DIR = 'reports'             // Tumhare ExtentReports ka folder
-        REPORT_FILE = 'extent-report.html' // Extent report ka file name
+        IMAGE_NAME = 'hybrid-framework-docker'
+        REPORT_DIR = 'reports'
+        REPORT_FILE = 'extent-report.html'
     }
 
     stages {
@@ -20,10 +16,17 @@ pipeline {
             }
         }
 
-        stage('Build & Run Selenium Tests') {
+        stage('Build Docker Image') {
             steps {
-                echo "🛠️ Building project and running Selenium tests..."
-                sh 'mvn clean test -Dbrowser=chrome'
+                echo "🐳 Building Docker image..."
+                sh "docker build -t ${IMAGE_NAME} ."
+            }
+        }
+
+        stage('Run Tests in Docker') {
+            steps {
+                echo "🛠️ Running Selenium tests inside Docker container..."
+                sh "docker run --rm -v \$(pwd)/${REPORT_DIR}:/app/${REPORT_DIR} ${IMAGE_NAME}"
             }
         }
 
